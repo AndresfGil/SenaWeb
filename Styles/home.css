@@ -59,6 +59,14 @@ img{
     margin-right: 10px;
 }
 
+a {
+    color: azure;
+    size: 1.6rem;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+
 /* Main */
 
 body{
