@@ -75,85 +75,116 @@ a {
     background-color:  rgb(238, 238, 238);
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
-
-#orders-container{
-    background-color:rgb(23, 107, 135);
+.carrito-container{
+    background-color: rgb(23, 107, 135);
     width: 80%;
     height: 80%;
-    margin-bottom: 50px;
-    border: 2px solid;
-    margin-top: 50px;
-}
-
-#orders-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Cambia el número de columnas según desees */
-    gap: 20px; /* Espacio entre las cards de productos */
-    padding: 30px;
-    margin: 0 auto; /* Centrar horizontalmente la cuadrícula */
-    max-width: 70vw; /* Establecer el ancho máximo en 80vw */
-    margin-top: 40px;
-    background-color: transparent;
-}
-
-.product-card {
-    background-color:rgb(238, 238, 238);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: start;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.productos-container{
+    background-color: rgb(238, 238, 238);
     width: 60%;
+    height: 90%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.product-card h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    font-size: 1.8rem;
-    background-color: transparent;
-    color: black;
+.product-card{
+    background-color:papayawhip;
+    width: 90%;
+    height: 100px;
+    z-index: 1;
+    margin-top: 15px;
+    border: 2px solid rgb(5, 59, 80);
+    border-radius: 4px;
 }
 
-.product-card p {
+.product-card p{
     font-size: 1rem;
     font-size: 1.4rem;
     background-color: transparent;
     color: black;
 }
 
-.description-card {
-    width: 70%;
+
+.pago-container{
+    background-color: rgb(238, 238, 238);
+    width: 35%;
+    height: 300px;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.price {
-    font-size: 1.25rem;
-    color:rgb(100, 204, 197); /* Color del precio */
-    font-weight: bold;
-    background-color: transparent;
+.pago-descripcion{
+    text-align: start;
 }
 
-.btn-cancel{
-    background-color: transparent;
-    border: 1px solid red;
-    margin-left: 10px;
-    border-radius: 5px;
-}
-
-#pago-container{
-    width: 30%;
-    background-color:  rgb(238, 238, 238);
-    margin-left: 10px;
-}
-
+.Btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    margin-top: 30px;
+  }
+  
+  .svgIcon {
+    width: 16px;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .Btn::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+  }
+  
+  .Btn:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  .Btn:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
 
   /* Footer */
 
