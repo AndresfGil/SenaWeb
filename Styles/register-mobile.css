@@ -23,6 +23,7 @@
     justify-content: center;
   }
   
+  
   main {
     display: flex;
     align-items: center;
@@ -31,29 +32,30 @@
     height: 1000px;
   }
   
-  #login_container img {
-    height: 90px;
-    width: 90px;
+  #register_container img {
+    height: 15%;
+    width: 30%;
     margin-bottom: 20px;
   }
   
-  #login_container {
-    background-color:rgb(23, 107, 135);
+  #register_container {
+    background-color: rgb(23, 107, 135);
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    height: 60%;
+    width: 60%;
+    height: 80%;
   }
   
-  #login_form {
+  #register_form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 40%;
+    height: 60%;
+    width: 70%;
     margin-bottom: 20px;
   }
   
@@ -69,12 +71,13 @@
     background: transparent;
     padding: 5px;
     outline: none;
+    width: 80%;
   }
   
   .button {
     margin-top: 20px;
     height: 50px;
-    width: 200px;
+    width: 80%;
     position: relative;
     background-color: transparent;
     cursor: pointer;
@@ -119,9 +122,4 @@
   a {
     color: azure;
     size: 1.6rem;
-    text-decoration: none;
-  }
-  
-  .recover-pass {
-    margin-top: 40px;
   }

@@ -12,17 +12,16 @@ html {
 body {
   background-color: #49C3FF;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.25'%3E%3Ccircle fill='%2349C3FF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%235c97f6' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%236e7aee' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23947fe7' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23b78fe1' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23CE9EDC' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
+  background-attachment: initial;
   background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: fixed;
   width: 100%;
   height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 main {
   display: flex;
@@ -32,13 +31,13 @@ main {
   height: 1000px;
 }
 
-#register_container img {
-  height: 90px;
-  width: 90px;
+#login_container img {
+  height: 15%;
+  width: 35%;
   margin-bottom: 20px;
 }
 
-#register_container {
+#login_container {
   background-color: rgb(23, 107, 135);
   border-radius: 7px;
   display: flex;
@@ -46,15 +45,16 @@ main {
   align-items: center;
   justify-content: center;
   width: 40%;
-  height: 80%;
+  height: 60%;
 }
 
-#register_form {
+#login_form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 60%;
+  height: 40%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -70,12 +70,13 @@ input {
   background: transparent;
   padding: 5px;
   outline: none;
+  width: 80%;
 }
 
 .button {
   margin-top: 20px;
   height: 50px;
-  width: 200px;
+  width: 80%;
   position: relative;
   background-color: transparent;
   cursor: pointer;
@@ -90,6 +91,7 @@ input {
   z-index: 1;
   font-weight: 800;
   letter-spacing: 4px;
+  width: 80%;
 }
 
 .type1::after {
@@ -120,4 +122,9 @@ input {
 a {
   color: azure;
   size: 1.6rem;
+  text-decoration: none;
+}
+
+.recover-pass {
+  margin-top: 40px;
 }

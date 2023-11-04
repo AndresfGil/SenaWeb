@@ -7,10 +7,14 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="stylesheet" href="./Styles/home-mobile.css">
+    <link rel="stylesheet" href="./Styles/home.css" media="(min-width: 769px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -21,12 +25,37 @@
             <nav id="nav_bar">
                 <ul id="nav_list">
                     <button class="button_nav"><img src="./resources/IconHome.png" alt="home">Inicio</button>
-                    <button class="button_nav" class="btn btn-primary"><img src="./resources/IconProfile.png" alt="profile">Perfil</button>
+                    <button class="button_nav" class="btn btn-primary"><img src="./resources/IconProfile.png" alt="profile"><a href="./add.html">Agrega un producto</a></button>
                     <button class="button_nav"><img src="./resources/IconBox.png" alt="box"><a href="./orders.html">Mis Pedidos</a></button>
                     <button class="button_nav"><img src="./resources/Iconcarrito.png" alt="carrito"><a href="./carrito.html">Carrito</a></button>
                 </ul>
                 </div>
         </section>
+        <div class="nav-mobile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <a class="navbar-brand" href="#">TechnicalSoftware</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./home.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./add.html">Agrega un producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./orders.html">Mis Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carrito.html">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
     </header>
 
@@ -86,7 +115,7 @@
             </div>
             <div class="contactar-container">
                 <h3>Servicios</h3>
-                <p>Automarizacion</p>
+                <p>Automatizacion</p>
                 <p>Alarmas</p>
                 <p>Control de acceso</p>
                 <p>CCTV Video</p>
