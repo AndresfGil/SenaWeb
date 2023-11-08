@@ -1,127 +1,122 @@
 * {
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(238, 238, 238);
-    font-family: 'Merriweather', serif;;
-}
-
+      background-color: rgb(238, 238, 238);
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: 'Merriweather', serif;;
+      margin: 0;
+      padding: 0;
+  }
 html {
-    font-size: 62.5%;
-}
-
+      font-size: 62.5%;
+  }
 /* Header */
 #nav_container {
-    display: none;
-}
-
-.navbar-expand-lg {
-    background-color: transparent; /* Fondo transparente */
-}
-
-img{
-    background-color: transparent;
-    margin-right: 10px;
-}
-
-a {
-    color: azure;
-    size: 1.6rem;
-    text-decoration: none;
-    background-color: transparent;
+      display: none;
   }
+.navbar-expand-lg {
+      background-color: transparent;
 
-
+     /* Fondo transparente */
+  }
+img{
+      background-color: transparent;
+      margin-right: 10px;
+  }
+a {
+      background-color: transparent;
+      color: azure;
+      size: 1.6rem;
+      text-decoration: none;
+  }
 /* Main */
-
 body{
-    background-color: #49C3FF;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.25'%3E%3Ccircle fill='%2349C3FF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%235c97f6' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%236e7aee' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23947fe7' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23b78fe1' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23CE9EDC' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
-}
-
+      background-attachment: fixed;
+      background-color: #49C3FF;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.25'%3E%3Ccircle fill='%2349C3FF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%235c97f6' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%236e7aee' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23947fe7' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23b78fe1' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23CE9EDC' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+  }
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Cambia el número de columnas según desees */
-    gap: 20px; /* Espacio entre las cards de productos */
-    padding: 20px;
-    margin: 0 auto; /* Centrar horizontalmente la cuadrícula */
-    max-width: 80vw; /* Establecer el ancho máximo en 80vw */
-    margin-top: 40px;
-    background-color: transparent;
-}
+      background-color: transparent;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+      margin-top: 40px;
+      max-width: 80vw;
+      padding: 20px;
 
+     /* Cambia el número de columnas según desees */
+     /* Espacio entre las cards de productos */
+     /* Centrar horizontalmente la cuadrícula */
+     /* Establecer el ancho máximo en 80vw */
+  }
 .product-card {
-    background-color:rgb(23, 107, 135);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-
+      background-color:rgb(23, 107, 135);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+  }
 .product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+      border-radius: 5px;
+      height: auto;
+      max-width: 100%;
+
     font-size: 1.8rem
-}
-
+  }
 .product-card h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    font-size: 1.8rem;
-    background-color: transparent;
-    color: white;
-}
-
+      background-color: transparent;
+      color: white;
+      font-size: 1.5rem;
+      font-size: 1.8rem;
+      margin: 10px 0;
+  }
 .product-card p {
-    font-size: 1rem;
-    font-size: 1.4rem;
-    background-color: transparent;
-    color: white;
-}
-
+      background-color: transparent;
+      color: white;
+      font-size: 1rem;
+      font-size: 1.4rem;
+  }
 .price {
-    font-size: 1.25rem;
-    color:rgb(100, 204, 197); /* Color del precio */
-    font-weight: bold;
-    background-color: transparent;
-}
+      background-color: transparent;
+      color:rgb(100, 204, 197);
+      font-size: 1.25rem;
+      font-weight: bold;
 
+     /* Color del precio */
+  }
 .btn-add{
-    background-color: transparent;
-    border: none;
-    margin-left: 10px;
-}
-
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+  }
 /* Footer */
-
 #footer-container{
-    background-color: rgb(5, 59, 80);
-    display: flex;
-    color: white;
-    flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-wrap: wrap;
-}
+      align-items: center;
+      background-color: rgb(5, 59, 80);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
 
+     /* Centra horizontalmente */
+     /* Centra verticalmente */
+  }
 .contactar-container{
-    flex: 1; /* Distribuye el espacio disponible entre los contenedores */
-    padding: 20px; /* Espaciado entre contenedores */
-    text-align: center;
-    background-color: transparent;
+      background-color: transparent;
+      flex: 1;
+      padding: 20px;
+      text-align: center;
 
-}
-
+     /* Distribuye el espacio disponible entre los contenedores */
+     /* Espaciado entre contenedores */
+  }
 .contactar-container p{
-    background-color: transparent;
-    text-align: start;
-}
-
+      background-color: transparent;
+      text-align: start;
+  }
 .contactar-container h3{
-    background-color: transparent;
-    margin-bottom: 30px;
-}
+      background-color: transparent;
+      margin-bottom: 30px;
+  }

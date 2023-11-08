@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/carrito-mobile.css">
-    <link rel="stylesheet" href="./Styles/carrito.css" media="(min-width: 769px)">
-    <title>Carrito</title>
+    <link rel="stylesheet" href="./Styles/users-mobile.css">
+    <link rel="stylesheet" href="./Styles/users.css" media="(min-width: 769px)">
+    <title>Ordenes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header>
 
         <section id="nav_container">
@@ -22,13 +21,13 @@
                 <ul id="nav_list">
                     <button class="button_nav"><img src="./resources/IconHome.png" alt="home"><a
                             href="./home.html">Inicio</a></button>
-                            <button class="button_nav"><img src="./resources/IconProfile.png" alt="home"><a href="./users.html">Usuarios</a></button>
-                            <button class="button_nav" class="btn btn-primary"><img src="./resources/IconMas.png"
+                    <button class="button_nav"><img src="./resources/IconProfile.png" alt="home">Usuarios</button>
+                    <button class="button_nav" class="btn btn-primary"><img src="./resources/IconMas.png"
                             alt="profile"><a href="./add.html">Agrega un producto</a></button>
 
-                    <button class="button_nav"><img src="./resources/IconBox.png" alt="box"><a href="./orders.html">Mis
-                            Pedidos</a></button>
-                    <button class="button_nav"><img src="./resources/Iconcarrito.png" alt="carrito">Carrito</button>
+                    <button class="button_nav"><img src="./resources/IconBox.png" alt="box">Mis Pedidos</button>
+                    <button class="button_nav"><img src="./resources/Iconcarrito.png" alt="carrito"><a
+                            href="./carrito.html">Carrito</a></button>
                 </ul>
                 </div>
         </section>
@@ -56,34 +55,38 @@
                     </ul>
                 </div>
             </nav>
+        </div>
 
     </header>
 
     <main>
         <div id="main-container">
-            <div class="carrito-container">
-                <div class="productos-container">
+            <div id="name-container">
+                <p>Mis pedidos!</p>
+                <p>Nombre Cliente</p>
+            </div>
+            <div id="orders-container">
+                <div id="orders-cards">
                     <div class="product-card">
-                        <p>Producto</p>
+                        <div class="description-card">
+                            <h2>Camaras</h2>
+                            <p>Camara de seguridad CCTV</p>
+                            <span class="price">$80.000</span>
+                        </div>
+
+                        <button class="btn-cancel"><img src="./resources/IconCancel.png"
+                                alt="cancelar">Cancelar</button>
                     </div>
+
                     <div class="product-card">
-                        <p>Producto</p>
+                        <div class="description-card">
+                            <h2>Cerradura Digital</h2>
+                            <p>Cerradura digital de puertas</p>
+                            <span class="price">$120.000</span>
+                        </div>
+
+                        <p>Entregado</p>
                     </div>
-                </div>
-                <div class="pago-container">
-                    <h2>Resumen de la compra</h2> <br>
-                    <div class="pago-descripcion">
-                        <span>Total de productos:</span> <br>
-                        <span>Total a pagar:</span>
-                    </div>
-                    <button class="Btn">
-                        Realizar Pago
-                        <svg class="svgIcon" viewBox="0 0 576 512">
-                            <path
-                                d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z">
-                            </path>
-                        </svg>
-                    </button>
                 </div>
             </div>
         </div>
@@ -120,6 +123,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
